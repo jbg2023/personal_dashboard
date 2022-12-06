@@ -2,6 +2,8 @@ import './App.css';
 import Quotes from './components/Quotes/Quotes';
 import Sports from './components/Sports/Sports';
 
+import Weather from './components/Weather/Weather';
+
 function App() {
   return (
     <>
@@ -14,6 +16,8 @@ function App() {
       <div className='innerbox'>
         <div className='subbox'>
           <h1>Weather</h1>
+          
+          <Weather />
         </div>
         <div className='subbox'>
           <h1>Quotes</h1>
