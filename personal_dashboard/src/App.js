@@ -1,5 +1,6 @@
 import './App.css';
 import Quotes from './components/Quotes/Quotes';
+import Weather from './components/Weather/Weather';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className='innerbox'>
         <div className='subbox'>
           <h1>Weather</h1>
+          <Weather />
         </div>
         <div className='subbox'>
           <h1>Quotes</h1>
