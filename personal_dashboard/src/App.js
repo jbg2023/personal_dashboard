@@ -5,6 +5,12 @@ import Stocks from './components/Stocks/Stocks';
 function App() {
   return (
     <>
+    <div style={{
+        backgroundImage: `url("https://source.unsplash.com/random/?wallpaper,background")`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+        }}>
+        
     <nav>
       <div className='navigation'>
         <h1>Homepage</h1>
@@ -37,6 +43,7 @@ function App() {
         </div>
       </div>
     </main>
+    </div>
     </> 
   )
 
