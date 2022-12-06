@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 
+
 const Weather = () => {
-    const [weather, setWeather] = useState({})
+    const [weather, setWeather] = useState({});
+    const [location, setLocation]= useState({});
     const [isLoading, setIsLoading] = useState(false);
     
     const getWeather = () => {
@@ -18,12 +20,13 @@ const Weather = () => {
       .then(response =>  response.json())
       .then(response => {
         console.log("data", response)
-        
-      setWeather(response.current_observation.condition)
+        setLocation(response.location) 
+        setWeather(response.current_observation.condition)
     })
       .catch(err => console.error(err));
       setIsLoading(false);
   }
+
     useEffect(() => {
       getWeather()
     }, [])
@@ -32,9 +35,11 @@ const Weather = () => {
        
           return (
                 <>
-                
+                <>{!isLoading && <h3>{location.city} , {location.region}</h3>}</>
+                <img width={70}src="/icons/weather_icons/03d.png"/>
                 <>{!isLoading && <h3>{weather.temperature} &#8457;</h3>}</>
                 <>{!isLoading && <h3>{weather.text}</h3>}</>
+                
                 {isLoading && <p>Loading...</p>}
                 </>
               )
