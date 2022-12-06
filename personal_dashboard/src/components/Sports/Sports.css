@@ -1,0 +1,29 @@
+.sportscontainer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   border: 1px solid black;
+   height: 40vh;
+}
+.score{
+    text-align: center;
+}
+.homeshirt{
+    text-align: center;
+}
+.awayshirt{
+    text-align: center;
+}
+.homeshirt p{
+    font-weight: bold;
+}
+.awayshirt p{
+    font-weight: bold;
+}
+.score p{
+    font-weight: bold;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
