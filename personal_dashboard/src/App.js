@@ -1,4 +1,5 @@
 import './App.css';
+import Quotes from './components/Quotes/Quotes';
 
 function App() {
   return (
@@ -11,25 +12,26 @@ function App() {
     <main>
       <div className='innerbox'>
         <div className='subbox'>
-          weather
+          <h1>Weather</h1>
         </div>
         <div className='subbox'>
-          quotes
+          <h1>Quotes</h1>
+            <Quotes/>
         </div>
       </div>
       <div className='innerbox'>
         <div className='subboxsingle'>
-          stocks
+          <h1>Stocks</h1>
         </div>
       </div>
       <div className='innerbox'>
         <div className='subboxsingle'>
-          calender
+          <h1>Calender</h1>
         </div>
       </div>
       <div className='innerbox'>
         <div className='subboxsingle'>
-          sports
+          <h1>Sports</h1>
         </div>
       </div>
     </main>
