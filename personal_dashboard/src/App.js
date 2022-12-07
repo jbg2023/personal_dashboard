@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <div style={{
-        backgroundImage: `url("https://source.unsplash.com/random/?wallpaper,background")`,
+        backgroundImage: `url("https://source.unsplash.com/random/?light,wallpaper,background")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
         }}>
