@@ -1,12 +1,14 @@
 import './App.css';
 import Quotes from './components/Quotes/Quotes';
-
+import Stocks from './components/Stocks/Stocks';
+import Weather from './components/Weather/Weather';
+import Sports from './components/Sports/Sports';
 
 function App() {
   return (
     <>
     <div style={{
-        backgroundImage: `url("https://source.unsplash.com/random/?light,wallpaper,background")`,
+        backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
         }}>
