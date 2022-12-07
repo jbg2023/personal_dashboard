@@ -136,7 +136,6 @@ function Sports() {
                 'X-RapidAPI-Host': 'odds.p.rapidapi.com'
             }
         };
-        
         fetch('https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=3', options)
             .then(response => response.json())
             .then(response => {
@@ -145,7 +144,6 @@ function Sports() {
             })
             .catch(console.error);
     }
-
     useEffect(() => {
         showSports()
     }, [])
@@ -156,43 +154,77 @@ function Sports() {
     }
   return (
     <div className='sportscontainer'>
-        {sports.slice(0, 5).map(sport => {
-            if(sport.completed === true){
-                return (
-                    <>
-                        {logos.map(e => {
-                                if(e.name === sport.home_team){
-                                    return (
-                                        <div className='homeshirt'>
-                                            <img src={e.logo} alt={e.name}/>
-                                            <p>{sport.away_team}</p>
-                                        </div>
-                                    )
-                                }
-                            })}
-                        <div className='score'>
-                            <p>Scores</p>
-                            {sport.scores[0].score} - {sport.scores[1].score}
-                        </div>
-                        
-                            {logos.map(e => {
-                                if(e.name === sport.away_team){
-                                    return (
-                                        <div className='awayshirt'>
-                                            <img src={e.logo} alt={e.name}/>
-                                            <p>{sport.away_team}</p>
-                                        </div>
-                                    )
-                                }
-                            })}
-                        
-                    </>
-                    )
-                }
-            })}
+        <div className='slide'>
+                {sports.map(sport => {
+                    if(sport.completed === true){
+                        return (
+                            <>
+                                {logos.map(e => {
+                                        if(e.name === sport.home_team){
+                                            return (
+                                                <div className='homeshirt'>
+                                                    <img src={e.logo} alt={e.name}/>
+                                                    <p>{sport.home_team}</p>
+                                                </div>
+                                            )
+                                        }
+                                    })}
+                                <div className='score'>
+                                    <p>Date Played:</p>
+                                    {sport.commence_time.substring(0,10)}
+                                    <p>Scores</p>
+                                    {sport.scores[0].score} - {sport.scores[1].score}
+                                    <p className='gamestatusfinished'>Game Complete</p>
+                                </div>
+                                
+                                    {logos.map(e => {
+                                        if(e.name === sport.away_team){
+                                            return (
+                                                <div className='awayshirt'>
+                                                    <img src={e.logo} alt={e.name}/>
+                                                    <p>{sport.away_team}</p>
+                                                </div>
+                                            )
+                                        }
+                                    })}
+                            </>
+                            )
+                        }
+                        if(sport.completed === false){
+                            return (
+                                <>
+                                    {logos.map(e => {
+                                            if(e.name === sport.home_team){
+                                                return (
+                                                    <div className='homeshirt'>
+                                                        <img src={e.logo} alt={e.name}/>
+                                                        <p>{sport.home_team}</p>
+                                                    </div>
+                                                )
+                                            }
+                                        })}
+                                    <div className='score'>
+                                        <p>Date Played:</p>
+                                        {sport.commence_time.substring(0,10)}
+                                        <p className='gamestatus'>Upcoming Game</p>
+                                    </div>
+                                    
+                                        {logos.map(e => {
+                                            if(e.name === sport.away_team){
+                                                return (
+                                                    <div className='awayshirt'>
+                                                        <img src={e.logo} alt={e.name}/>
+                                                        <p>{sport.away_team}</p>
+                                                    </div>
+                                                )
+                                            }
+                                        })}
+                                </>
+                                )
+                        } 
+                    })}
+        </div>
     </div>
-
   )
-
 }
 export default Sports

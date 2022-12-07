@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 *{ 
   margin: 0; 
 } 
@@ -37,4 +40,9 @@ main{
   background-color: rgb(0, 0, 0, .5);
   border-radius: 20px;
   box-shadow: 5px 5px 1px 1px black;
+}
+.sportsmain{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(31, 81, 255);
 }

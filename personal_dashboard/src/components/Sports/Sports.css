@@ -1,18 +1,33 @@
 .sportscontainer{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-   border: 1px solid black;
+   display: flexbox;
+   overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overflow-y: scroll;
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
    height: 40vh;
+}
+.sportscontainer::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 40vh;
 }
 .score{
     text-align: center;
+    padding-bottom: 50px;
 }
 .homeshirt{
     text-align: center;
+    padding-bottom: 50px;
 }
 .awayshirt{
     text-align: center;
+    padding-bottom: 50px;
 }
 .homeshirt p{
     font-weight: bold;
@@ -26,4 +41,11 @@
 img{
     height: 50px;
     width: 50px;
+}
+
+.gamestatus{
+    color:rgb(255, 49, 49);
+}
+.gamestatusfinished{
+    color:rgb(15, 255, 80);
 }

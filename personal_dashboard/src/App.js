@@ -32,7 +32,7 @@ function App() {
       </div>
       <div className='innerbox'>
         <div className='subboxsingle'>
-          <h1>Sports</h1>
+          <h1 className='sportsmain'>NBA 2020 Games</h1>
           <Sports/>
         </div>
       </div>
