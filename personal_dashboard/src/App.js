@@ -4,7 +4,6 @@ import Stocks from './components/Stocks/Stocks';
 import Weather from './components/Weather/Weather';
 import Sports from './components/Sports/Sports';
 import Nfl from './components/Sports/Nfl';
-import Fifa from './components/Sports/FifaSoccer';
 
 function App() {
   return (
@@ -48,12 +47,10 @@ function App() {
           <div className='sportsnav'>
             <a href='#NBA'>NBA 2022 Games</a>
             <a href='#NFL'>NFL 2022 Games</a>
-            <a href='#FIFA'>FIFA 2022 World Cup</a>
           </div>
           <div className='sportgenre'>
             <Sports/>
             <Nfl/>
-            <Fifa/>
           </div>
         </div>
       </div>
