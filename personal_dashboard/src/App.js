@@ -1,5 +1,7 @@
 import './App.css';
 import Quotes from './components/Quotes/Quotes';
+import Stocks from './components/Stocks/Stocks';
+import Weather from './components/Weather/Weather';
 import Sports from './components/Sports/Sports';
 import Nfl from './components/Sports/Nfl';
 import Fifa from './components/Sports/FifaSoccer';
@@ -7,6 +9,12 @@ import Fifa from './components/Sports/FifaSoccer';
 function App() {
   return (
     <>
+    <div style={{
+        backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+        }}>
+        
     <nav>
       <div className='navigation'>
         <h1>Homepage</h1>
@@ -16,6 +24,8 @@ function App() {
       <div className='innerbox'>
         <div className='subbox'>
           <h1>Weather</h1>
+          
+          <Weather />
         </div>
         <div className='subbox'>
           <h1>Quotes</h1>
@@ -25,6 +35,7 @@ function App() {
       <div className='innerbox'>
         <div className='subboxsingle'>
           <h1>Stocks</h1>
+            <Stocks />
         </div>
       </div>
       <div className='innerbox'>
@@ -47,6 +58,7 @@ function App() {
         </div>
       </div>
     </main>
+    </div>
     </> 
   )
 
