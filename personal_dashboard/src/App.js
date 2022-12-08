@@ -1,13 +1,23 @@
 import './App.css';
 
-import Quotes from './components/Quotes/Quotes';
 import Forecast from './components/Weather/Forecast';
+
+import Quotes from './components/Quotes/Quotes';
+import Stocks from './components/Stocks/Stocks';
 import Weather from './components/Weather/Weather';
+import Sports from './components/Sports/Sports';
+import Nfl from './components/Sports/Nfl';
 
 function App() {
   return (
     
     <>
+    <div style={{
+        backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+        }}>
+        
     <nav>
       <div className='navigation'>
         <h1>Homepage</h1>
@@ -28,6 +38,7 @@ function App() {
       <div className='innerbox'>
         <div className='subboxsingle'>
           <h1>Stocks</h1>
+            <Stocks />
         </div>
       </div>
       <div className='innerbox'>
@@ -35,12 +46,20 @@ function App() {
           <h1>Calender</h1>
         </div>
       </div>
-      <div className='innerbox'>
+      <div className='innerbox'> 
         <div className='subboxsingle'>
-          <h1>Sports</h1>
+          <div className='sportsnav'>
+            <a href='#NBA'>NBA 2022 Games</a>
+            <a href='#NFL'>NFL 2022 Games</a>
+          </div>
+          <div className='sportgenre'>
+            <Sports/>
+            <Nfl/>
+          </div>
         </div>
       </div>
     </main>
+    </div>
     </> 
     
   )
