@@ -1,7 +1,8 @@
 import './App.css';
 
-import Forecast from './components/Weather/Forecast';
 
+
+import Loaction from './components/Weather/Loaction';
 import Quotes from './components/Quotes/Quotes';
 import Stocks from './components/Stocks/Stocks';
 import Weather from './components/Weather/Weather';
@@ -9,6 +10,7 @@ import Sports from './components/Sports/Sports';
 import Nfl from './components/Sports/Nfl';
 
 function App() {
+
   return (
     
     <>
@@ -26,9 +28,7 @@ function App() {
     <main>
       <div className='innerbox'>
         <div className='subbox'>
-          <h1>Weather</h1>
-          <Forecast />
-          <Weather />
+          
         </div>
         <div className='subbox'>
           <h1>Quotes</h1>
@@ -42,9 +42,11 @@ function App() {
         </div>
       </div>
       <div className='innerbox'>
-        <div className='subboxsingle'>
-          <h1>Calender</h1>
-        </div>
+        < div className='subboxsingle'>
+        <Loaction />
+        <Weather/>
+          </div>
+        
       </div>
       <div className='innerbox'> 
         <div className='subboxsingle'>
