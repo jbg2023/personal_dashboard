@@ -4,128 +4,136 @@ import "./Sports.css"
 
 const logos = [
     {
-        name: "Boston Celtics",
-        logo: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/800px-Boston_Celtics.svg.png"
+        name:'Qatar',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Qatar_%283-2%29.svg/1024px-Flag_of_Qatar_%283-2%29.svg.png',
     },
     {
-        name: "Brooklyn Nets",
-        logo: "https://b.fssta.com/uploads/application/nba/team-logos/Nets.vresize.350.350.medium.0.png",
+        name:'Ecuador',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/800px-Flag_of_Ecuador.svg.png?20140720204051',
     },
     {
-        name: "New York Knicks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-new-york-knicks-logo.png",
+        name:'Senegal',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/2560px-Flag_of_Senegal.svg.png',
     },
     {
-        name: "Philadelphia 76ers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-philadelphia-76ers-logo.png",
+        name:'Netherlands',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_the_Netherlands.png',
     },
     {
-        name: "Toronto Raptors",
-        logo: "https://loodibee.com/wp-content/uploads/nba-toronto-raptors-logo-2020.png",
+        name:'England',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/e/ef/England_flag.png',
     },
     {
-        name: "Chicago Bulls",
-        logo: "https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo.png",
+        name:'Iran',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/2560px-Flag_of_Iran.svg.png',
     },
     {
-        name: "Cleveland Cavaliers",
-        logo: "https://loodibee.com/wp-content/uploads/Clevelan-Cavaliers-logo-2022.png",
+        name:'Usa',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_the_United_States.png',
     },
     {
-        name: "Detroit Pistons",
-        logo: "https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo.png",
+        name:'Wales',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/2560px-Flag_of_Wales.svg.png',
     },
     {
-        name: "Indiana Pacers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-indiana-pacers-logo.png",
+        name:'Argentina',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/2560px-Flag_of_Argentina.svg.png',
     },
     {
-        name: "Milwaukee Bucks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-milwaukee-bucks-logo.png",
+        name:'Saudi Arabia',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1280px-Flag_of_Saudi_Arabia.svg.png',
     },
     {
-        name: "Atlanta Hawks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo.png",
+        name:'Mexico',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Mexico.png',
     },
     {
-        name: "Charlotte Hornets",
-        logo: "https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo.png",
+        name:'Poland',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/2560px-Flag_of_Poland.svg.png',
     },
     {
-        name: "Miami Heat",
-        logo: "https://loodibee.com/wp-content/uploads/nba-miami-heat-logo.png",
+        name:'France',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png',
     },
     {
-        name: "Orlando Magic",
-        logo: "https://loodibee.com/wp-content/uploads/nba-orlando-magic-logo.png",
+        name:'Australia',
+        logo:'https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png',
     },
     {
-        name: "Washington Wizards",
-        logo: "https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png",
+        name:'Denmark',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1280px-Flag_of_Denmark.svg.png',
     },
     {
-        name: "Denver Nuggets",
-        logo: "https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018.png",
+        name:'Tunisia',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/2560px-Flag_of_Tunisia.svg.png',
     },
     {
-        name: "Minnesota Timberwolves",
-        logo: "https://loodibee.com/wp-content/uploads/nba-minnesota-timberwolves-logo.png",
+        name:'Spain',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png',
     },
     {
-        name: "Oklahoma City Thunder",
-        logo: "https://loodibee.com/wp-content/uploads/nba-oklahoma-city-thunder-logo.png",
+        name:'Costa Rica',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Costa_Rica_%28state%29.svg/1280px-Flag_of_Costa_Rica_%28state%29.svg.png',
     },
     {
-        name: "Portland Trail Blazers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-portland-trail-blazers-logo.png",
+        name:'Germany',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png',
     },
     {
-        name: "Utah Jazz",
-        logo: "https://loodibee.com/wp-content/uploads/utah-jazz-logo-wordmark-2022.png",
+        name:'Japan',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/2560px-Flag_of_Japan.svg.png',
     },
     {
-        name: "Golden State Warriors",
-        logo: "https://loodibee.com/wp-content/uploads/nba-golden-state-warriors-logo-2020.png",
+        name:'Belgium',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/2363px-Flag_of_Belgium.svg.png',
     },
     {
-        name: "Los Angeles Clippers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-la-clippers-logo.png",
+        name:'Canada',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Canada.png',
     },
     {
-        name: "Los Angeles Lakers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-los-angeles-lakers-logo.png",
+        name:'Morocco',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png',
     },
     {
-        name: "Phoenix Suns",
-        logo: "https://loodibee.com/wp-content/uploads/nba-phoenix-suns-logo.png",
+        name:'Croatia',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Croatia.png',
     },
     {
-        name: "Sacramento Kings",
-        logo: "https://loodibee.com/wp-content/uploads/nba-sacramento-kings-logo.png",
+        name:'Brazil',
+        logo:'https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png',
     },
     {
-        name: "Dallas Mavericks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-dallas-mavericks-logo.png",
+        name:'Serbia',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/2560px-Flag_of_Serbia.svg.png',
     },
     {
-        name: "Houston Rockets",
-        logo: "https://loodibee.com/wp-content/uploads/nba-houston-rockets-logo-2020.png",
+        name:'Switzerland',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/512px-Flag_of_Switzerland.svg.png',
     },
     {
-        name: "Memphis Grizzlies",
-        logo: "https://loodibee.com/wp-content/uploads/nba-memphis-grizzlies-logo.png",
+        name:'Cameroon',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Cameroon.svg/2560px-Flag_of_Cameroon.svg.png',
     },
     {
-        name: "New Orleans Pelicans",
-        logo: "https://loodibee.com/wp-content/uploads/nba-new-orleans-pelicans-logo.png",
+        name:'Portugal',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/2560px-Flag_of_Portugal.svg.png',
     },
     {
-        name: "San Antonio Spurs",
-        logo: "https://loodibee.com/wp-content/uploads/nba-san-antonio-spurs-logo.png",
-    }
+        name:'Ghana',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1280px-Flag_of_Ghana.svg.png',
+    },
+    {
+        name:'Uruguay',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/640px-Flag_of_Uruguay.svg.png',
+    },
+    {
+        name:'South Korea',
+        logo:'https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_South_Korea.png',
+    },
 ]
 
-function Sports() {
+function Fifa() {
     const [ sports, setSports ] = useState(null)
     
     const showSports = () => {
@@ -136,7 +144,7 @@ function Sports() {
                 'X-RapidAPI-Host': 'odds.p.rapidapi.com'
             }
         };
-        fetch(`https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=3`, options)
+        fetch(`https://odds.p.rapidapi.com/v4/sports/soccer_fifa_world_cup/scores?daysFrom=3`, options)
             .then(response => response.json())
             .then(response => {
                 setSports(response)
@@ -154,7 +162,7 @@ function Sports() {
     } 
   return (
     <div className='sportslide'>
-    <h1 className='sportsmain' id='NBA'>NBA 2022 Games</h1>
+    <h1 className='sportsmain' id='FIFA'>FIFA 2022 World Cup</h1>
     <div className='sportscontainer'>
         <div className='slide'>
                 {sports.map(sport => {
@@ -175,7 +183,7 @@ function Sports() {
                                     <p>Date Played:</p>
                                     {sport.commence_time.substring(0,10)}
                                     <p>Scores</p>
-                                    {sport.scores[0].score} - {sport.scores[1].score}
+                                    {sport.scores[1].score} - {sport.scores[0].score}
                                     <p className='gamestatusfinished'>Game Complete</p>
                                 </div>
                                 
@@ -230,4 +238,4 @@ function Sports() {
 </div>
   )
 }
-export default Sports
+export default Fifa

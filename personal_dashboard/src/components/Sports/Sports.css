@@ -1,12 +1,13 @@
+
 .sportscontainer{
-   display: flexbox;
-   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  overflow-y: scroll;
-  
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-   height: 40vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    height: 40vh;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
 }
 .sportscontainer::-webkit-scrollbar{
     display: none;
@@ -49,3 +50,26 @@ img{
 .gamestatusfinished{
     color:rgb(15, 255, 80);
 }
+.sportsmain{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(31, 81, 255);
+  }
+  .button {
+    text-align: center;
+    scroll-behavior: smooth;
+  }
+  .frame1{
+    scroll-behavior: smooth;
+    border: 1px solid black;
+    margin: 10px;
+  }
+  .frame2{
+    scroll-behavior: smooth;
+    border: 1px solid black;
+    margin: 10px;
+  }
+  .totalframe{
+    border:2px solid red;
+    overflow-y: scroll;
+  }

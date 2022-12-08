@@ -4,128 +4,137 @@ import "./Sports.css"
 
 const logos = [
     {
-        name: "Boston Celtics",
-        logo: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/800px-Boston_Celtics.svg.png"
+        name: "Arizona Cardinals",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-arizona-cardinals-team-logo-2.png"
     },
     {
-        name: "Brooklyn Nets",
-        logo: "https://b.fssta.com/uploads/application/nba/team-logos/Nets.vresize.350.350.medium.0.png",
+        name: "Atlanta Falcons",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-atlanta-falcons-team-logo-2.png",
     },
     {
-        name: "New York Knicks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-new-york-knicks-logo.png",
+        name: "Carolina Panthers",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-carolina-panthers-team-logo-2.png",
     },
     {
-        name: "Philadelphia 76ers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-philadelphia-76ers-logo.png",
+        name: "Chicago Bears",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-chicago-bears-team-logo-2.png",
     },
     {
-        name: "Toronto Raptors",
-        logo: "https://loodibee.com/wp-content/uploads/nba-toronto-raptors-logo-2020.png",
+        name: "Dallas Cowboys",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-dallas-cowboys-team-logo-2.png",
     },
     {
-        name: "Chicago Bulls",
-        logo: "https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo.png",
+        name: "Detroit Lions",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png",
     },
     {
-        name: "Cleveland Cavaliers",
-        logo: "https://loodibee.com/wp-content/uploads/Clevelan-Cavaliers-logo-2022.png",
+        name: "Green Bay Packers",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-green-bay-packers-team-logo-2.png",
     },
     {
-        name: "Detroit Pistons",
-        logo: "https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo.png",
+        name: "Los Angeles Rams",
+        logo: "https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png",
     },
     {
-        name: "Indiana Pacers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-indiana-pacers-logo.png",
+        name: "Minnesota Vikings",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-minnesota-vikings-team-logo-2.png",
     },
     {
-        name: "Milwaukee Bucks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-milwaukee-bucks-logo.png",
+        name: "New Orleans Saints",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-new-orleans-saints-team-logo-2.png",
     },
     {
-        name: "Atlanta Hawks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo.png",
+        name: "Philadelphia Eagles",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-philadelphia-eagles-team-logo-2.png",
     },
     {
-        name: "Charlotte Hornets",
+        name: "San Francisco 49ers",
         logo: "https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo.png",
     },
     {
-        name: "Miami Heat",
-        logo: "https://loodibee.com/wp-content/uploads/nba-miami-heat-logo.png",
+        name: "Seattle Seahawks",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
     },
     {
-        name: "Orlando Magic",
-        logo: "https://loodibee.com/wp-content/uploads/nba-orlando-magic-logo.png",
+        name: "Tampa Bay Buccaneers",
+        logo: "https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png",
     },
     {
-        name: "Washington Wizards",
-        logo: "https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png",
+        name: "Washington Commanders",
+        logo: "https://loodibee.com/wp-content/uploads/washington-commanders-logo.png",
     },
     {
-        name: "Denver Nuggets",
-        logo: "https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018.png",
+        name: "Baltimore Ravens",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-baltimore-ravens-team-logo-2.png",
     },
     {
-        name: "Minnesota Timberwolves",
-        logo: "https://loodibee.com/wp-content/uploads/nba-minnesota-timberwolves-logo.png",
+        name: "Buffalo Bills",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-team-logo-2.png",
     },
     {
-        name: "Oklahoma City Thunder",
-        logo: "https://loodibee.com/wp-content/uploads/nba-oklahoma-city-thunder-logo.png",
+        name: "Cincinnati Bengals",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-cincinnati-bengals-team-logo.png",
     },
     {
-        name: "Portland Trail Blazers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-portland-trail-blazers-logo.png",
+        name: "Cleveland Browns",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-cleveland-browns-team-logo-2.png",
     },
     {
-        name: "Utah Jazz",
-        logo: "https://loodibee.com/wp-content/uploads/utah-jazz-logo-wordmark-2022.png",
+        name: "Denver Broncos",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-denver-broncos-team-logo-2.png",
     },
     {
-        name: "Golden State Warriors",
-        logo: "https://loodibee.com/wp-content/uploads/nba-golden-state-warriors-logo-2020.png",
+        name: "Houston Texans",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-houston-texans-team-logo-2.png",
     },
     {
-        name: "Los Angeles Clippers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-la-clippers-logo.png",
+        name: "Indianapolis Colts",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-indianapolis-colts-team-logo-2.png",
     },
     {
-        name: "Los Angeles Lakers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-los-angeles-lakers-logo.png",
+        name: "Jacksonville Jaguars",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-jacksonville-jaguars-team-logo-2.png",
     },
     {
-        name: "Phoenix Suns",
-        logo: "https://loodibee.com/wp-content/uploads/nba-phoenix-suns-logo.png",
+        name: "Kansas City Chiefs",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png",
     },
     {
-        name: "Sacramento Kings",
-        logo: "https://loodibee.com/wp-content/uploads/nba-sacramento-kings-logo.png",
+        name: "Las Vegas Raiders",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png",
     },
     {
-        name: "Dallas Mavericks",
-        logo: "https://loodibee.com/wp-content/uploads/nba-dallas-mavericks-logo.png",
+        name: "Los Angeles Chargers",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-los-angeles-chargers-team-logo-2.png",
     },
     {
-        name: "Houston Rockets",
-        logo: "https://loodibee.com/wp-content/uploads/nba-houston-rockets-logo-2020.png",
+        name: "Miami Dolphins",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-miami-dolphins-team-logo-2.png",
     },
     {
-        name: "Memphis Grizzlies",
-        logo: "https://loodibee.com/wp-content/uploads/nba-memphis-grizzlies-logo.png",
+        name: "New England Patriots",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png",
     },
     {
-        name: "New Orleans Pelicans",
-        logo: "https://loodibee.com/wp-content/uploads/nba-new-orleans-pelicans-logo.png",
+        name: "New York Jets",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-new-york-jets-team-logo.png",
     },
     {
-        name: "San Antonio Spurs",
-        logo: "https://loodibee.com/wp-content/uploads/nba-san-antonio-spurs-logo.png",
+        name: "Pittsburgh Steelers",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-pittsburgh-steelers-team-logo-2.png",
+    },
+    {
+        name: "New York Giants",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png",
+    },
+    {
+        name: "Tennessee Titans",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png",
     }
 ]
 
-function Sports() {
+
+function Nfl() {
     const [ sports, setSports ] = useState(null)
     
     const showSports = () => {
@@ -136,7 +145,7 @@ function Sports() {
                 'X-RapidAPI-Host': 'odds.p.rapidapi.com'
             }
         };
-        fetch(`https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=3`, options)
+        fetch(`https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores?daysFrom=3`, options)
             .then(response => response.json())
             .then(response => {
                 setSports(response)
@@ -153,8 +162,8 @@ function Sports() {
         )
     } 
   return (
-    <div className='sportslide'>
-    <h1 className='sportsmain' id='NBA'>NBA 2022 Games</h1>
+    <div className='sportslide2'>
+    <h1 className='sportsmain' id='NFL'>NFL 2022 Games</h1>
     <div className='sportscontainer'>
         <div className='slide'>
                 {sports.map(sport => {
@@ -227,7 +236,7 @@ function Sports() {
                     })}
         </div>
     </div>
-</div>
+    </div>
   )
 }
-export default Sports
+export default Nfl

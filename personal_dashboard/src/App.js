@@ -1,6 +1,8 @@
 import './App.css';
 import Quotes from './components/Quotes/Quotes';
 import Sports from './components/Sports/Sports';
+import Nfl from './components/Sports/Nfl';
+import Fifa from './components/Sports/FifaSoccer';
 
 function App() {
   return (
@@ -30,10 +32,18 @@ function App() {
           <h1>Calender</h1>
         </div>
       </div>
-      <div className='innerbox'>
+      <div className='innerbox'> 
         <div className='subboxsingle'>
-          <h1 className='sportsmain'>NBA 2020 Games</h1>
-          <Sports/>
+          <div className='sportsnav'>
+            <a href='#NBA'>NBA 2022 Games</a>
+            <a href='#NFL'>NFL 2022 Games</a>
+            <a href='#FIFA'>FIFA 2022 World Cup</a>
+          </div>
+          <div className='sportgenre'>
+            <Sports/>
+            <Nfl/>
+            <Fifa/>
+          </div>
         </div>
       </div>
     </main>
