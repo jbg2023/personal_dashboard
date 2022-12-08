@@ -1,10 +1,12 @@
 import './App.css';
-import Quotes from './components/Quotes/Quotes';
 
+import Quotes from './components/Quotes/Quotes';
+import Forecast from './components/Weather/Forecast';
 import Weather from './components/Weather/Weather';
 
 function App() {
   return (
+    
     <>
     <nav>
       <div className='navigation'>
@@ -15,7 +17,7 @@ function App() {
       <div className='innerbox'>
         <div className='subbox'>
           <h1>Weather</h1>
-          
+          <Forecast />
           <Weather />
         </div>
         <div className='subbox'>
@@ -40,6 +42,7 @@ function App() {
       </div>
     </main>
     </> 
+    
   )
 
 }

@@ -1,9 +1,13 @@
-import React from 'react'
+import Modal from '../Ui/Modal'
 import Button from '../Ui/Button'
 import Card from '../Ui/Card'
 import './ForecastModal.module.css'
-const ForecastModal = (props) => {
+
+
+const Forecast = (props) => {
+
   return (
+    <Modal>
     <Card className='modal' >
         <header className='header'> Five Day Forecast</header>
 <span>{props.day}:   </span>
@@ -16,7 +20,8 @@ const ForecastModal = (props) => {
 
     
     </Card>
+    </Modal>
   )
 }
 
-export default ForecastModal
+export default Forecast

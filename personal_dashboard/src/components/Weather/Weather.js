@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ForecastModal from './ForecastModal';
+import ForecastModal from './Forecast';
 
 
 const Weather = () => {
@@ -26,7 +26,7 @@ const Weather = () => {
       fetch(`https://yahoo-weather5.p.rapidapi.com/weather?location=${city}&format=json&u=f`, options)
       .then(response =>  response.json())
       .then(response => {
-        console.log("forecast", response.current_observation.condition)
+        console.log("forecast", response.forecasts[1].text)
         setLocation(response.location) 
         setWeather(response.current_observation.condition)
         setForecast(response.forecasts)
