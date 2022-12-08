@@ -1,4 +1,7 @@
 import './App.css';
+
+import Forecast from './components/Weather/Forecast';
+
 import Quotes from './components/Quotes/Quotes';
 import Stocks from './components/Stocks/Stocks';
 import Weather from './components/Weather/Weather';
@@ -7,6 +10,7 @@ import Nfl from './components/Sports/Nfl';
 
 function App() {
   return (
+    
     <>
     <div style={{
         backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
@@ -23,7 +27,7 @@ function App() {
       <div className='innerbox'>
         <div className='subbox'>
           <h1>Weather</h1>
-          
+          <Forecast />
           <Weather />
         </div>
         <div className='subbox'>
@@ -57,6 +61,7 @@ function App() {
     </main>
     </div>
     </> 
+    
   )
 
 }
