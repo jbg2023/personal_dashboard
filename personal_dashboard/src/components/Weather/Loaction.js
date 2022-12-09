@@ -41,7 +41,8 @@ const Loaction = () => {
             onKeyDown={getLocation}
             placeholder='Enter City Name'
             />
-            <button onClick={getLocation}>search</button>
+          
+        
     </div>
   )
 }
