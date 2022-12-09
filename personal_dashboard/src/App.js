@@ -8,6 +8,7 @@ import Stocks from './components/Stocks/Stocks';
 import Weather from './components/Weather/Weather';
 import Sports from './components/Sports/Sports';
 import Nfl from './components/Sports/Nfl';
+import Calender from './components/Calender/Calender';
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
     <main>
       <div className='innerbox'>
         <div className='subbox'>
-          
+          <Calender/>
         </div>
         <div className='subbox'>
           <h1>Quotes</h1>
