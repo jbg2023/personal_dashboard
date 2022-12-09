@@ -1,5 +1,6 @@
 import React, { useState, useEffect }from 'react'
 import Weather from './Weather';
+import './Location.css'
 
 const Loaction = () => {
     const [city, setCity] = useState('');
@@ -34,7 +35,8 @@ useEffect(() => {
   return (
     <div>
       <Weather lat={lat} lon={longitude} name={name}/>
-    <input 
+    <input className='input'
+           
             type="text"
             value={city}
             onChange={event => setCity(event.target.value)} 
