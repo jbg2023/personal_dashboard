@@ -139,8 +139,7 @@ function Sports() {
         fetch(`https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=3`, options)
             .then(response => response.json())
             .then(response => {
-                setSports(response)
-                console.log(response)                    
+                setSports(response)                   
             })
             .catch(console.error);
     }

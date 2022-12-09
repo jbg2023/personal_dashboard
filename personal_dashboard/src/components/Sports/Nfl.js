@@ -148,8 +148,7 @@ function Nfl() {
         fetch(`https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores?daysFrom=3`, options)
             .then(response => response.json())
             .then(response => {
-                setSports(response)
-                console.log(response)                    
+                setSports(response)                   
             })
             .catch(console.error);
     }
