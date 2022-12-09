@@ -9,4 +9,8 @@
 .quotesbox p{
     margin: 50px;
     font-size: large;
+    color: white;
+}
+.titlequote{
+    color:white;
 }

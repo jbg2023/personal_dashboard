@@ -27,6 +27,7 @@ function Quotes() {
     }
     return (
         <div>
+            <h1 className='titlequote'>Quote</h1>
             <div className='quotesbox'>
                 <p>{quotes.quote.body}</p>
             </div>

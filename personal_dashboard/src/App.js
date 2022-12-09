@@ -32,7 +32,6 @@ function App() {
           <Calender/>
         </div>
         <div className='subbox'>
-          <h1>Quotes</h1>
             <Quotes/>
         </div>
       </div>
@@ -44,8 +43,8 @@ function App() {
       </div>
       <div className='innerbox'>
         < div className='subboxsingle'>
-        {/* <Loaction />
-        <Weather/> */}
+        <Loaction />
+        <Weather/>
           </div>
         
       </div>
