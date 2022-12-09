@@ -1,0 +1,21 @@
+h1, h3 {
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgb(31, 81, 255);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.accordion-button {
+  background-color: rgb(0, 0, 0, 0);
+  color: white;
+  border-radius: 4px;
+}
+.accordion{
+  background-color: rgb(255, 255, 255,0) !important;
+  --bs-accordion-bg:  none;
+}
+.accordion-body{
+  color: white;
+}

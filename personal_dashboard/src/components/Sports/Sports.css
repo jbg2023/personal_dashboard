@@ -1,0 +1,64 @@
+
+.sportscontainer{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    height: 40vh;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+.sportscontainer::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+}
+.score{
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+    font-weight: bold;
+}
+.homeshirt{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.gamestatus{
+    color:rgb(255, 49, 49);
+}
+.gamestatusfinished{
+    color:rgb(15, 255, 80);
+}
+.awayshirt{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.homeshirt p{
+    font-weight: bold;
+    color: white;
+}
+.awayshirt p{
+    font-weight: bold;
+    color: white;
+}
+.score p{
+    margin: 0;
+}
+img{
+    height: 70px;
+    width: 70px;
+}
+
+.sportsmain{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(31, 81, 255);
+  }
+  .totalframe{
+    border:2px solid red;
+    overflow-y: scroll;
+  }
