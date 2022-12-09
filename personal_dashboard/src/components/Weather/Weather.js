@@ -1,11 +1,12 @@
 
 import ReactWeather, { useOpenWeather } from 'react-open-weather';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 
 
 const Weather = (props) => {
+    const [forecast, setForecast] = useState(true);
    
       const { data, isLoading, errorMessage } = useOpenWeather({
         key: '9493340bcdeabdb3bd334c664f543c59',
@@ -15,6 +16,7 @@ const Weather = (props) => {
         unit: 'imperial', // values are (metric, standard, imperial)
       });
       return (
+        <div onClick={()=> setForecast(!forecast)}>
         <ReactWeather
           isLoading={isLoading}
           errorMessage={errorMessage}
@@ -22,8 +24,9 @@ const Weather = (props) => {
           lang="en"
           locationLabel={props.name}
           unitsLabels={{ temperature: 'F', windSpeed: 'Km/h' }}
-          showForecast
+          showForecast={forecast}
         />
+        </div>
       );
     };
 
