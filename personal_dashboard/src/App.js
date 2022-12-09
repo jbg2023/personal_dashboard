@@ -36,7 +36,7 @@ function App() {
         </div>
       </div>
       <div className='innerbox'>
-        <div className='subboxsingle'>
+        <div className='subboxsingle' id='stocks'>
           <h1>Stocks</h1>
             <Stocks />
         </div>

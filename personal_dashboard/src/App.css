@@ -22,7 +22,7 @@ main{
 
 .subbox{
   background-color: rgb(0, 0, 0, .5);
-  height: 22vh;
+  height: fit-content;
   margin: 10px;
   color:rgb(0, 0, 0);
   border-radius: 20px;
@@ -65,6 +65,9 @@ main{
   color: white;
 }
 
+#stocks {
+  height:fit-content;
+}
 
 
 
