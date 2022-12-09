@@ -26,6 +26,12 @@ const Loaction = () => {
     setIsLoading(false);
     setCity('')
 }
+function handleKeyPress(e){
+  const key = e.key
+  if(key === 'Enter'){
+    getLocation()
+  }
+}
 
 useEffect(() => {
     getLocation()
@@ -34,14 +40,14 @@ useEffect(() => {
   
   return (
     <div>
-      <Weather lat={lat} lon={longitude} name={name}/>
-    <input 
-            type="text"
-            value={city}
-            onChange={event => setCity(event.target.value)} 
-            placeholder='Enter City Name'
+            <input 
+              type="text"
+              onKeyDown={(e) => handleKeyPress(e)}
+              value={city}
+              onChange={event => setCity(event.target.value)} 
+              placeholder='Enter City Name'
             />
-            <button onClick={getLocation}>search</button>
+      <Weather lat={lat} lon={longitude} name={name}/>
     </div>
   )
 }
