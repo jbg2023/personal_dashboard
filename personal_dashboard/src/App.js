@@ -20,12 +20,6 @@ function App() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
         }}>
-        
-    <nav>
-      <div className='navigation'>
-        <h1>Homepage</h1>
-      </div>
-    </nav>
     <main>
       <div className='innerbox'>
         <div className='subbox'>
