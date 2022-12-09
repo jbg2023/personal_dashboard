@@ -12,19 +12,12 @@ import Calender from './components/Calender/Calender';
 
 function App() {
   return (
-    
     <>
     <div style={{
         backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
         }}>
-        
-    <nav>
-      <div className='navigation'>
-        <h1>Homepage</h1>
-      </div>
-    </nav>
     <main>
       <div className='innerbox'>
         <div className='subbox'>
@@ -36,14 +29,15 @@ function App() {
       </div>
       <div className='innerbox'>
         <div className='subboxsingle' id='stocks'>
-          <h1>Stocks</h1>
+          <h1>Stock News</h1>
             <Stocks />
         </div>
       </div>
       <div className='innerbox'>
         < div className='subboxsingle'>
-        <Loaction />
-        <Weather/>
+          <div className='searchnav'>
+            <Loaction />
+          </div>
           </div>
         
       </div>

@@ -20,6 +20,14 @@
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 }
+input{
+  background-color: rgb(255, 255, 255,0);
+  border-color: white;
+  color: white;
+}
+input::placeholder{
+  color: white;
+}
 
 @media (min-width: 768px) {
   .modal {

@@ -4,17 +4,15 @@
 *{ 
   margin: 0; 
 } 
-nav{ 
-  background-color: black; 
-  height: 75px; 
-} 
+
 .navigation{ 
   text-align: left; 
   color:white;
   padding-top: 20px;
 } 
 main{ 
-  height: 1250px; 
+  /* height: 1250px;  */
+  height: 100vh;
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr;
@@ -22,7 +20,7 @@ main{
 
 .subbox{
   background-color: rgb(0, 0, 0, .5);
-  height: fit-content;
+  height: 23.2vh;
   margin: 10px;
   color:rgb(0, 0, 0);
   border-radius: 20px;
@@ -31,12 +29,13 @@ main{
 }     
 
 .subboxsingle{
-  height: 45vh;
+  height: 47vh;
   margin: 10px;
   color:rgb(0, 0, 0);
   background-color: rgb(0, 0, 0, .5);
   border-radius: 20px;
   box-shadow: 5px 5px 1px 1px black;
+  color: white;
 }
 .subboxsinglesports{
   height: 45vh;
@@ -65,8 +64,43 @@ main{
   color: white;
 }
 
+
 #stocks {
   height:fit-content;
+
+.css-12zx21b .rw-container-right {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 40%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.searchnav{
+  padding: 10px;
+  text-align: center;
+}
+.weatherbox{
+  height: 40vh;
+  margin: 10px;
+  position: relative;
+}
+.css-12zx21b .rw-container-main {
+  color: rgb(255, 255, 255);
+  font-weight: bold !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+}
+.css-12zx21b {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold !important;
+  font-size: 13px;
+  border-radius: 0px 0px 5px 5px;
+
 }
 
 
