@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 *{ 
@@ -57,15 +57,17 @@ main{
   height: 88%;
   overflow: hidden;
   scroll-behavior: smooth;
+  
 }
 .sportsnav a{
   margin: 5px;
   font-family: 'Bebas Neue', cursive;
   font-size: 30px;
   color: white;
-}
+
+} 
 
 
 
 
-
+ 

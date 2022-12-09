@@ -4,15 +4,16 @@ import Stocks from './components/Stocks/Stocks';
 import Weather from './components/Weather/Weather';
 import Sports from './components/Sports/Sports';
 import Nfl from './components/Sports/Nfl';
+import Calender from './components/Calender/Calender';
 
 function App() {
   return (
     <>
     <div style={{
-        backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
-        }}>
+      backgroundImage: `url("https://source.unsplash.com/random/?nature")`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
+    }}>
         
     <nav>
       <div className='navigation'>
@@ -22,9 +23,9 @@ function App() {
     <main>
       <div className='innerbox'>
         <div className='subbox'>
-          <h1>Weather</h1>
-          
-          <Weather />
+          <div className='calendar'>
+            <Calender/>
+          </div>
         </div>
         <div className='subbox'>
           <h1>Quotes</h1>
@@ -34,12 +35,16 @@ function App() {
       <div className='innerbox'>
         <div className='subboxsingle'>
           <h1>Stocks</h1>
-            <Stocks />
+            {/* <Stocks /> */}
         </div>
       </div>
       <div className='innerbox'>
         <div className='subboxsingle'>
-          <h1>Calender</h1>
+        <div className='sportsnav'>
+          </div>
+          <div className='sportgenre'>
+                 {/* <Weather/> */}
+          </div>
         </div>
       </div>
       <div className='innerbox'> 
@@ -49,8 +54,8 @@ function App() {
             <a href='#NFL'>NFL 2022 Games</a>
           </div>
           <div className='sportgenre'>
-            <Sports/>
-            <Nfl/>
+            {/* <Sports/>
+            <Nfl/> */}
           </div>
         </div>
       </div>
