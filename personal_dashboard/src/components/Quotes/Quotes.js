@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Quotes.css'
+import Button from 'react-bootstrap/Button';
 
 function Quotes() {
 
@@ -28,11 +29,15 @@ function Quotes() {
     return (
         <div>
             <h1 className='titlequote'>Quote</h1>
-            <div className='quotesbox'>
-                <p>{quotes.quote.body}</p>
+            <div className='quotesbox fluid'>
+                <p>"{quotes.quote.body}"</p>
+                <p>-{quotes.quote.author}</p>
             </div>
             <div className='btn'>
-                <button onClick={showQuotes}>Next Quote</button>
+                <Button
+                    variant="outline-light"
+                    onClick={showQuotes}>Next Quote
+                </Button>
             </div>
         </div>
     )
