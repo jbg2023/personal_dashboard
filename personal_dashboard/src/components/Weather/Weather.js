@@ -37,7 +37,7 @@ const Weather = (props) => {
         unit: 'imperial', // values are (metric, standard, imperial)
       });
       return (
-        <div onClick={()=> setForecast(!forecast)}>
+        <div onClick={()=> setForecast(!forecast)} className="weatherbox">
         <ReactWeather
         theme={customStyles}
           isLoading={isLoading}

@@ -35,6 +35,7 @@ main{
   background-color: rgb(0, 0, 0, .5);
   border-radius: 20px;
   box-shadow: 5px 5px 1px 1px black;
+  color: white;
 }
 .subboxsinglesports{
   height: 45vh;
@@ -71,6 +72,30 @@ main{
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
+}
+
+.searchnav{
+  padding: 10px;
+  text-align: center;
+}
+.weatherbox{
+  height: 40vh;
+  margin: 10px;
+  position: relative;
+}
+.css-12zx21b .rw-container-main {
+  color: rgb(255, 255, 255);
+  font-weight: bold !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+}
+.css-12zx21b {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold !important;
+  font-size: 13px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 
