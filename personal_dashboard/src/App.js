@@ -11,7 +11,6 @@ import Nfl from './components/Sports/Nfl';
 import Calender from './components/Calender/Calender';
 
 function App() {
-
   return (
     <>
     <div style={{
@@ -29,7 +28,7 @@ function App() {
         </div>
       </div>
       <div className='innerbox'>
-        <div className='subboxsingle'>
+        <div className='subboxsingle' id='stocks'>
           <h1>Stock News</h1>
             <Stocks />
         </div>
