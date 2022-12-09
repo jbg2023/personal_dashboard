@@ -19,6 +19,7 @@ const Loaction = () => {
             setLong(response[0].lon)
             setLat(response[0].lat)
             setName(response[0].name)
+          
     })
     .catch(err => console.error(err));
     setIsLoading(false);
