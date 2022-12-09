@@ -43,8 +43,8 @@ function App() {
       </div>
       <div className='innerbox'>
         < div className='subboxsingle'>
-        <Loaction />
-        <Weather/>
+        {/* <Loaction />
+        <Weather/> */}
           </div>
         
       </div>
