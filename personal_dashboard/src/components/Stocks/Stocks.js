@@ -1,13 +1,12 @@
-// require('dotenv').config()
+
 import { useState, useEffect } from 'react';
 import './Stocks.css';
 import Accordion from 'react-bootstrap/Accordion';
 
 function Stocks() {
-    const dotenv = process.env.POLYGON_API_KEY
     const [ stocks, setStocks ] = useState(null)
     const showStocks = () => {
-       fetch('https://api.polygon.io/v2/reference/news?apiKey=aLriDEvFgjQLT7f3abtivxH60WMzReFo')
+       fetch(`https://api.polygon.io/v2/reference/news?apiKey=${process.env.REACT_APP_STOCKS_API}`)
             .then(response => response.json())
             // .then(response => console.log(response))
             .then(response => setStocks(response))

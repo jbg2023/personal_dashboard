@@ -11,7 +11,6 @@ import Nfl from './components/Sports/Nfl';
 import Calender from './components/Calender/Calender';
 
 function App() {
-
   return (
     
     <>

@@ -9,7 +9,7 @@ const Loaction = () => {
     const [isLoading, setIsLoading] = useState(false);
 
   
-    const url= `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=9493340bcdeabdb3bd334c664f543c59`
+    const url= `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.REACT_APP_WEATHER_API}`
 
     const getLocation = () => {
         setIsLoading(true);
