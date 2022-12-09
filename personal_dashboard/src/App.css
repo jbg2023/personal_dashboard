@@ -63,7 +63,15 @@ main{
   color: white;
 }
 
-
+.css-12zx21b .rw-container-right {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 40%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
 
 
 

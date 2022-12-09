@@ -1,5 +1,6 @@
 import React, { useState, useEffect }from 'react'
 import Weather from './Weather';
+import "./ForecastModal.module.css"
 
 const Loaction = () => {
     const [city, setCity] = useState('');
