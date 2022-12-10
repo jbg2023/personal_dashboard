@@ -39,16 +39,9 @@ function handleKeyPress(e){
 
   return (
     <div>
-
-      
-    
-          
-        
-
-
             <input 
               type="text"
-              onKeyDown={getLocation}
+              onKeyDown={(e) => handleKeyPress(e)}
               value={city}
               onChange={event => setCity(event.target.value)} 
               placeholder='Enter City Name'
