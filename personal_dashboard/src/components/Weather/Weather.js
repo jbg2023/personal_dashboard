@@ -7,7 +7,7 @@ import "./ForecastModal.module.css"
 
 
 const Weather = (props) => {
-    const [forecast, setForecast] = useState(true);
+    const [forecast, setForecast] = useState(false);
 
     const customStyles = {
         fontFamily:  'Helvetica, sans-serif',
