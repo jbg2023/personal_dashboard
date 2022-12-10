@@ -1,13 +1,14 @@
 .quotesbox{
     text-align: center;
     /* border: 1px solid black; */
-    height: 10vh;
+    height: fit-content;
+    margin: auto 0;
 }
 .btn{
     text-align: center;
 }
 .quotesbox p{
-    margin: 50px;
+    /* margin: 50px; */
     font-size: large;
     color: white;
 }

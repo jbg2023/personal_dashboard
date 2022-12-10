@@ -7,7 +7,7 @@ import "./ForecastModal.module.css"
 
 
 const Weather = (props) => {
-    const [forecast, setForecast] = useState(true);
+    const [forecast, setForecast] = useState(false);
 
     const customStyles = {
         fontFamily:  'Helvetica, sans-serif',
@@ -30,7 +30,7 @@ const Weather = (props) => {
     };
    
       const { data, isLoading, errorMessage } = useOpenWeather({
-        key: '9493340bcdeabdb3bd334c664f543c59',
+        key: `${process.env.REACT_APP_WEATHER_API}`,
         lat: `${props.lat}`,
         lon: `${props.lon}`,
         lang: 'en',

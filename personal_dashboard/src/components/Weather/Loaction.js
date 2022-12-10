@@ -1,4 +1,4 @@
-import React, { useState, useEffect }from 'react'
+import React, { useState }from 'react'
 import Weather from './Weather';
 import "./ForecastModal.module.css"
 
@@ -10,11 +10,14 @@ const Loaction = () => {
     const [isLoading, setIsLoading] = useState(false);
 
   
-    const url= `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=9493340bcdeabdb3bd334c664f543c59`
+    const url= `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.REACT_APP_WEATHER_API}`
 
     const getLocation = () => {
+        
         setIsLoading(true);
-        fetch(url).then(response => response.json()).then(response => {
+        fetch(url)
+        .then(response => response.json())
+        .then(response => {
            console.log(response[0].lat.toString())
            console.log(response[0].name)
             setLong(response[0].lon)
@@ -32,12 +35,6 @@ function handleKeyPress(e){
     getLocation()
   }
 }
-
-useEffect(() => {
-    getLocation()
-  }, [])
-   
-  
   return (
     <div>
             <input 
@@ -47,7 +44,7 @@ useEffect(() => {
               onChange={event => setCity(event.target.value)} 
               placeholder='Enter City Name'
             />
-      <Weather lat={lat} lon={longitude} name={name}/>
+     <Weather lat={lat} lon={longitude} name={name}/>
     </div>
   )
 }
