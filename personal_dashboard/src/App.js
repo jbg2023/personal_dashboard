@@ -9,8 +9,10 @@ import Weather from './components/Weather/Weather';
 import Sports from './components/Sports/Sports';
 import Nfl from './components/Sports/Nfl';
 import Calender from './components/Calender/Calender';
+import Clock from './components/Calender/Clock';
 
 function App() {
+
   return (
     <>
     <div style={{
@@ -20,29 +22,29 @@ function App() {
         }}>
     <main>
       <div className='innerbox'>
-        <div className='subbox'>
+        <div className='subbox' >
           <Calender/>
         </div>
-        <div className='subbox'>
+        <div className='subbox' >
             <Quotes/>
         </div>
       </div>
       <div className='innerbox'>
-        <div className='subboxsingle' id='stocks'>
+        <div className='subboxsingle' id='stocks' >
+          <Clock/>
           <h1>Stock News</h1>
             <Stocks />
         </div>
       </div>
       <div className='innerbox'>
-        < div className='subboxsingle'>
+        <div className='subboxsingle '>
           <div className='searchnav'>
             <Loaction />
           </div>
-          </div>
-        
+        </div>
       </div>
       <div className='innerbox'> 
-        <div className='subboxsingle'>
+        <div className='subboxsingle' >
           <div className='sportsnav'>
             <a href='#NBA'>NBA 2022 Games</a>
             <a href='#NFL'>NFL 2022 Games</a>
@@ -56,8 +58,6 @@ function App() {
     </main>
     </div>
     </> 
-    
   )
-
 }
 export default App;

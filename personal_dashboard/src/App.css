@@ -67,7 +67,7 @@ main{
 
 #stocks {
   height:fit-content;
-
+}
 .css-12zx21b .rw-container-right {
   background-color: rgba(0, 0, 0, 0) !important;
   width: 40%;
@@ -101,6 +101,10 @@ main{
   font-size: 13px;
   border-radius: 0px 0px 5px 5px;
 
+}
+.innerbox{
+  overflow: hidden;
+  border-radius: 40px;
 }
 
 
