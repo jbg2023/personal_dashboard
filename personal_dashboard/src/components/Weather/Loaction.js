@@ -35,8 +35,6 @@ function handleKeyPress(e){
     getLocation()
   }
 }
-
-
   return (
     <div>
             <input 

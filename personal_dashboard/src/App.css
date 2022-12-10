@@ -26,6 +26,7 @@ main{
   border-radius: 20px;
   box-shadow: 5px 5px 1px 1px black;
   text-align: center;
+  overflow: hidden;
 }     
 
 .subboxsingle{
@@ -77,7 +78,28 @@ main{
   -webkit-box-pack: center;
   justify-content: center;
 }
-
+.css-12zx21b .rw-container-header {
+  margin: 0px 0px 10px;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 2px;
+}
+.css-ey6yfu .rw-forecast-date {
+  color: rgb(255, 255, 255);
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+.css-ey6yfu .rw-forecast-desc {
+  color: rgb(255, 255, 255);
+  margin: 10px 0px;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+.css-ey6yfu .rw-forecast-range {
+  color: rgb(255, 255, 255);
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
 .searchnav{
   padding: 10px;
   text-align: center;
