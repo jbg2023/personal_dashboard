@@ -127,12 +127,11 @@ const logos = [
 
 function Sports() {
     const [ sports, setSports ] = useState(null)
-    
     const showSports = () => {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '2015809037mshf97dd2a34293d90p144073jsn9507263ce2f7',
+                'X-RapidAPI-Key': `${process.env.REACT_APP_SPORTS_API}`,
                 'X-RapidAPI-Host': 'odds.p.rapidapi.com'
             }
         };
