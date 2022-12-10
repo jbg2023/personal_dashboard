@@ -33,24 +33,18 @@ const Loaction = () => {
 
   return (
     <div>
-      <Weather lat={lat} lon={longitude} name={name}/>
-    <input 
-            type="text"
-            value={city}
-            onChange={event => setCity(event.target.value)} 
-            onKeyDown={getLocation}
-            placeholder='Enter City Name'
-            />
+      
+    
           
         
             <input 
               type="text"
-              onKeyDown={(e) => handleKeyPress(e)}
+              onKeyDown={getLocation}
               value={city}
               onChange={event => setCity(event.target.value)} 
               placeholder='Enter City Name'
             />
-      <Weather lat={lat} lon={longitude} name={name}/>
+     <Weather lat={lat} lon={longitude} name={name}/>
     </div>
   )
 }
