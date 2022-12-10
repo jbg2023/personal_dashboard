@@ -80,7 +80,7 @@ main{
 }
 .css-12zx21b .rw-container-header {
   margin: 0px 0px 10px;
-  font-weight: bold;
+  font-weight: bold !important;
   font-size: x-large;
   letter-spacing: 2px;
 }
