@@ -12,9 +12,8 @@ const Loaction = () => {
   
     const url= `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.REACT_APP_WEATHER_API}`
 
-    const getLocation = (event) => {
+    const getLocation = () => {
         
-        if(event.key === 'Enter'){
         setIsLoading(true);
         fetch(url).then(response => response.json()).then(response => {
             setLong(response[0].lon)
@@ -26,18 +25,17 @@ const Loaction = () => {
     setIsLoading(false);
     setCity('')
 }
-    }
-
-
+function handleKeyPress(e){
+  const key = e.key
+  if(key === 'Enter'){
+    getLocation()
+  }
+}
   return (
     <div>
-      
-    
-          
-        
             <input 
               type="text"
-              onKeyDown={getLocation}
+              onKeyDown={(e) => handleKeyPress(e)}
               value={city}
               onChange={event => setCity(event.target.value)} 
               placeholder='Enter City Name'
