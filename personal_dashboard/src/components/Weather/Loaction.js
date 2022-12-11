@@ -15,11 +15,7 @@ const Loaction = () => {
     const getLocation = () => {
         
         setIsLoading(true);
-        fetch(url)
-        .then(response => response.json())
-        .then(response => {
-           console.log(response[0].lat.toString())
-           console.log(response[0].name)
+        fetch(url).then(response => response.json()).then(response => {
             setLong(response[0].lon)
             setLat(response[0].lat)
             setName(response[0].name)
@@ -44,7 +40,7 @@ function handleKeyPress(e){
               onChange={event => setCity(event.target.value)} 
               placeholder='Enter City Name'
             />
-     <Weather lat={lat} lon={longitude} name={name}/>
+    <Weather lat={lat} lon={longitude} name={name}/>
     </div>
   )
 }
