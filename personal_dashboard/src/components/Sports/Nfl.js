@@ -49,7 +49,7 @@ const logos = [
     },
     {
         name: "San Francisco 49ers",
-        logo: "https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/460px-San_Francisco_49ers_logo.svg.png",
     },
     {
         name: "Seattle Seahawks",
