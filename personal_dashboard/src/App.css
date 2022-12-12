@@ -125,7 +125,7 @@ main{
 
 }
 .innerbox{
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 40px;
 }
 
