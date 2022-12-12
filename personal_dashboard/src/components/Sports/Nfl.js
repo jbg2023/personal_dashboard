@@ -49,11 +49,11 @@ const logos = [
     },
     {
         name: "San Francisco 49ers",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/460px-San_Francisco_49ers_logo.svg.png",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
     },
     {
         name: "Seattle Seahawks",
-        logo: "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
+        logo: "https://loodibee.com/wp-content/uploads/nfl-seattle-seahawks-team-logo-2.png",
     },
     {
         name: "Tampa Bay Buccaneers",
