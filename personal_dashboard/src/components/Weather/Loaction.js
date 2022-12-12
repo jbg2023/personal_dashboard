@@ -7,14 +7,14 @@ const Loaction = () => {
     const [longitude, setLong] = useState('');
     const [lat, setLat] = useState('')
     const [name, setName] = useState ('');
-    const [isLoading, setIsLoading] = useState(false);
+    
 
   
     const url= `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.REACT_APP_WEATHER_API}`
 
     const getLocation = () => {
         
-        setIsLoading(true);
+        
         fetch(url).then(response => response.json()).then(response => {
             setLong(response[0].lon)
             setLat(response[0].lat)
@@ -22,7 +22,7 @@ const Loaction = () => {
           
     })
     .catch(err => console.error(err));
-    setIsLoading(false);
+   
     setCity('')
 }
 function handleKeyPress(e){
@@ -40,7 +40,7 @@ function handleKeyPress(e){
               onChange={event => setCity(event.target.value)} 
               placeholder='Enter City Name'
             />
-        <Weather lat={lat} lon={longitude} name={name}/>
+         <Weather lat={lat} lon={longitude} name={name}/>
     </div>
   )
 }
